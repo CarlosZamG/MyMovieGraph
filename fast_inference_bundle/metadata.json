@@ -1,0 +1,20 @@
+{
+    "format_version": 1,
+    "method": "full_neighborhood_two_layer_graphsage_decomposition",
+    "base_graph": "all interactions from inference_bundle/edge_index.npy",
+    "excluded_mapped_users": [],
+    "num_users_in_base_graph": 200948,
+    "num_movies": 84432,
+    "num_interactions_in_source_graph": 32000204,
+    "num_interactions_excluded": null,
+    "user_feature_dim": 296,
+    "user_feature_mode": "training",
+    "movie_feature_dim": 148,
+    "embedding_dim": 128,
+    "files": {
+        "movie_embeddings": "movie_embeddings.npy",
+        "movie_user_feature_sum": "movie_user_feature_sum.npy",
+        "movie_user_degree": "movie_user_degree.npy",
+        "model_state_dict": "model_state_dict.pt"
+    }
+}

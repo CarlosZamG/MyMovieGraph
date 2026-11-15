@@ -1,0 +1,65 @@
+{
+    "format_version": 1,
+    "source": {
+        "ratings_file": "ratings.csv"
+    },
+    "mapping": {
+        "strategy": "first_occurrence",
+        "user_order": "first occurrence in ratings.csv",
+        "movie_order": "first occurrence in ratings.csv"
+    },
+    "graph": {
+        "num_users": 200948,
+        "num_movies": 84432,
+        "num_interactions": 32000204,
+        "edge_index_shape": [
+            2,
+            32000204
+        ],
+        "edge_index_dtype": "int32",
+        "edge_index_row_0": "mapped user indices",
+        "edge_index_row_1": "mapped movie indices"
+    },
+    "movie_features": {
+        "shape": [
+            84432,
+            148
+        ],
+        "dtype": "float32",
+        "embedding_dim": 128,
+        "genre_dim": 20,
+        "feature_construction": [
+            "StandardScaler(PCA embeddings)",
+            "Genre one-hot encoding"
+        ],
+        "genre_columns": [
+            "(no genres listed)",
+            "Action",
+            "Adventure",
+            "Animation",
+            "Children",
+            "Comedy",
+            "Crime",
+            "Documentary",
+            "Drama",
+            "Fantasy",
+            "Film-Noir",
+            "Horror",
+            "IMAX",
+            "Musical",
+            "Mystery",
+            "Romance",
+            "Sci-Fi",
+            "Thriller",
+            "War",
+            "Western"
+        ]
+    },
+    "files": {
+        "edge_index": "edge_index.npy",
+        "user_ids": "user_ids.npy",
+        "movie_ids": "movie_ids.npy",
+        "movie_features": "movie_features.npy",
+        "movie_metadata": "movie_metadata.csv"
+    }
+}
